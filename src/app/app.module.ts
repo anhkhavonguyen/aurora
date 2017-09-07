@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { routing } from './app.routing';
 import { usersRouting } from "./users/users.routing";
 import { UsersModule } from "./users/users.module";
+import {AccountService } from "./account/account.service";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { UsersModule } from "./users/users.module";
     usersRouting,
     routing
   ],
-  providers: [],
+  providers: [AccountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

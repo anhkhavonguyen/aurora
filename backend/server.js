@@ -1,9 +1,12 @@
 var express = require('express');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 
 // Initialize Express App
 var app = express();
+
+app.use(cors());
 
 // Use Middlewares
 app.use(bodyParser.json());
