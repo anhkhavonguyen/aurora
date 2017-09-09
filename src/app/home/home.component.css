@@ -1,7 +1,48 @@
 .homepage{
     text-align:  center;
+    margin-top: 100px;
 }
 
 .sign-in{
     margin-bottom: 10px;
+    cursor: pointer;
+    color: gray;
+} 
+
+.setup{
+    color: green;
+}
+
+.forgot{
+    color: green;
+    margin-bottom: 10px;
+}
+
+.username{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-account{
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.input-account{
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-bottom-right-radius:0px;
+    border-bottom-style:none;
+}
+
+.btn-password{
+    border-right-width: 0;
+    border-top-width: 0;
+}
+
+.input-password{
+    border-left-width: 0;
+    border-top-width: 0;
+    border-top-right-radius:0px;
+    border-top-style:none;
 }

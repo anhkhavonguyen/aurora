@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { MaterializeModule } from 'angular2-materialize';
+//import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -25,7 +25,7 @@ import {AccountService } from "./account/account.service";
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterializeModule,
+    //MaterializeModule,
     UsersModule,
     usersRouting,
     routing
