@@ -14,12 +14,12 @@ export class HomeComponent implements OnInit {
   private appleAccount: any = {};
 
   ngOnInit() {
-    this.appleAccount = {
-      apple_id:this.appleAccount.appleId,
-      password:this.appleAccount.password,
-      extended_login:false
-    };
-    this.checkValidAppleAccount(this.appleAccount);
+    // this.appleAccount = {
+    //   apple_id:this.appleAccount.appleId,
+    //   password:this.appleAccount.password,
+    //   extended_login:false
+    // };
+    // this.checkValidAppleAccount(this.appleAccount);
   }
 
   public checkValidAppleAccount(appleAccount){

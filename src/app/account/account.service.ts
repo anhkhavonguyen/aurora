@@ -19,9 +19,8 @@ export class AccountService {
   constructor(private http: Http) { }
   
   checkValidAppleAccount(appleAccount){
-    // this.headers.set('Host','icloud.com');
-    this.headers.set('Origin','https://www.icloud.com');
-     //this.headers.set('Access-Control-Allow-Origin','https://www.icloud.com');
+    //this.headers.set('Origin','https://www.icloud.com');
+    //this.headers.set('Access-Control-Allow-Origin','https://www.icloud.com');
     let options = new RequestOptions({ headers: this.headers });
   
     return this.http.post(this.iCloudLoginUrl,appleAccount,options)
