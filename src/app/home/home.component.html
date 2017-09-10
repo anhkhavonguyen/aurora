@@ -3,30 +3,31 @@
     <img src="../assets/findMyIphone.png" width="100px" height="100px">
     <h3>Find My iPhone</h3>
   </div>
-    <div class="row username">
-      <div class="input-group">
-        <span class="input-group-btn">
-          <button class="btn btn-default btn-account" >Apple ID</button>
-        </span>
-        <input name="username" [(ngModel)]="appleAccount.appleId" type="text" class="input-account form-control" placeholder="example@icloud.com">
-      </div>
-    </div>
-    <div class="row password">
-      <div class="input-group">
-          <span class="input-group-btn ">
-              <button class="btn btn-default btn-password" >Password</button>
-          </span>
-        <input type="password" name="hashedpassword" [(ngModel)]="appleAccount.pass" class="input-password form-control" placeholder="required">
-      </div>
-    </div>
-
-    <div class="action">
-        <h3 class="sign-in" (click)="addUser()">Sign In...</h3>
-        <div class="row forgot">
-          <span>Forgot Apple ID or Password?</span>
+  <div class="input-content">
+      <div class="row username">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-account" >Apple ID</button>
+            </span>
+            <input name="username" [(ngModel)]="appleAccount.appleId" type="text" class="input-account form-control" placeholder="example@icloud.com">
+          </div>
         </div>
-        <div class="row setup">
-          <span>Setup Instructions</span>
+        <div class="row password">
+          <div class="input-group">
+              <span class="input-group-btn ">
+                  <button class="btn btn-default btn-password" >Password</button>
+              </span>
+            <input type="password" name="hashedpassword" [(ngModel)]="appleAccount.pass" class="input-password form-control" placeholder="required">
+          </div>
+        </div>
+  </div>
+    <div class="action">
+        <h3 class="sign-in" ng-class="{'sign-in-active': appleAccount.appleId != null }" (click)="addUser()">Sign In...</h3>
+        <div class="row forgot">
+          <a class="forgot" href="https://iforgot.apple.com/password/verify/appleid">Forgot Apple ID or Password?</a>
+        </div>
+        <div class="row">
+          <a class="setup" href="https://www.apple.com/icloud/setup/">Setup Instructions</a>
         </div>
     </div>
 </div>

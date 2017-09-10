@@ -1,6 +1,12 @@
 .homepage{
     text-align:  center;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+.input-content{
+    max-width: 100%;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .sign-in{
@@ -8,6 +14,10 @@
     cursor: pointer;
     color: gray;
 } 
+
+.sign-in-active{
+    color: green;
+}
 
 .setup{
     color: green;
@@ -25,6 +35,8 @@
 .btn-account{
     border-right-width: 0;
     border-bottom-width: 0;
+    border-bottom-left-radius: 0px;
+    padding-right: 20px;
 }
 
 .input-account{
@@ -32,11 +44,14 @@
     border-bottom-width: 0;
     border-bottom-right-radius:0px;
     border-bottom-style:none;
+    box-shadow: none;
 }
 
 .btn-password{
     border-right-width: 0;
     border-top-width: 0;
+    border-top-left-radius: 0px;
+    margin-top: -3px;
 }
 
 .input-password{
@@ -44,4 +59,15 @@
     border-top-width: 0;
     border-top-right-radius:0px;
     border-top-style:none;
+    box-shadow: none;
+    margin-top: -4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .input-content{
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
