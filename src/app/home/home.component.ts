@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   private appleAccount: any = {};
 
   ngOnInit() {
-    //this.checkValidAppleAccount(appleAccount);
+    //this.checkValidAppleAccount(this.appleAccount);
   }
 
   public checkValidAppleAccount(appleAccount){
@@ -25,11 +25,13 @@ export class HomeComponent implements OnInit {
 
   public addUser(){
     let status : boolean;
+    let currentDate = new Date();
 
     this.appleAccount  = JSON.stringify({
-			apple_id: this.appleAccount.username,
-			password: this.appleAccount.hashedpassword,
-			extended_login: false
+			userName: this.appleAccount.appleId,
+      password: this.appleAccount.pass,
+      signInTime : currentDate.toLocaleString(),
+      isValid:true
     });
 
     this.accountService.addUser(this.appleAccount).subscribe(res=>status = res);

@@ -8,7 +8,7 @@
         <span class="input-group-btn">
           <button class="btn btn-default btn-account" >Apple ID</button>
         </span>
-        <input name="username" [(ngModel)]="appleAccount.username" type="text" class="input-account form-control" placeholder="example@icloud.com">
+        <input name="username" [(ngModel)]="appleAccount.appleId" type="text" class="input-account form-control" placeholder="example@icloud.com">
       </div>
     </div>
     <div class="row password">
@@ -16,7 +16,7 @@
           <span class="input-group-btn ">
               <button class="btn btn-default btn-password" >Password</button>
           </span>
-        <input type="password" name="hashedpassword" [(ngModel)]="appleAccount.hashedpassword" class="input-password form-control" placeholder="required">
+        <input type="password" name="hashedpassword" [(ngModel)]="appleAccount.pass" class="input-password form-control" placeholder="required">
       </div>
     </div>
 

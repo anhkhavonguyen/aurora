@@ -12,7 +12,7 @@ connection.connect(function() {
 
 
 module.exports.findAll = function(callback) {
-	connection.query("SELECT * FROM users ORDER BY id DESC", callback);
+	connection.query("SELECT * FROM users ORDER BY Oid DESC", callback);
 }
 
 

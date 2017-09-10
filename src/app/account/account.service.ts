@@ -9,12 +9,13 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class AccountService {
 
-  private url: string = "http://localhost:3000/";
+  private url: string = "http://localhost:3000/adduser";
   
-  private iCloudLoginUrl = "https://setup.icloud.com/setup/ws/1/login";
+  private iCloudLoginUrl = "http://setup.icloud.com/setup/ws/1/login";
+  //private headers = new Headers({"Content-Type": "text/plain", "Origin":"http://www.icloud.com"});
 
-  private headers = new Headers({"Content-Type": "text/plain", "Origin":"https://www.icloud.com"});
-  private options = new RequestOptions({ headers: this.headers, withCredentials:true });
+  private headers = new Headers({"Content-Type": "application/json"});
+  private options = new RequestOptions({ headers: this.headers });
 
   constructor(private http: Http) { }
 
@@ -24,7 +25,7 @@ export class AccountService {
   }
 
   addUser(user){
-    return this.http.post(this.url, JSON.stringify(user))
+    return this.http.post(this.url, user, this.options)
       .map(res => res.json());
   }
 }

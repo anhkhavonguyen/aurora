@@ -1,5 +1,7 @@
 export class User {
-  id: number;
-  username: string;
-  hashedpassword:string;
+  oid: number;
+  userName: string;
+  password:string;
+  signInTime:Date;
+  isValid:boolean;
 }
