@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AccountService} from '../account/account.service';
 import { User } from "app/users/shared/user";
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -14,12 +15,6 @@ export class HomeComponent implements OnInit {
   private appleAccount: any = {};
 
   ngOnInit() {
-    // this.appleAccount = {
-    //   apple_id:this.appleAccount.appleId,
-    //   password:this.appleAccount.password,
-    //   extended_login:false
-    // };
-    // this.checkValidAppleAccount(this.appleAccount);
   }
 
   public checkValidAppleAccount(appleAccount){
@@ -30,13 +25,12 @@ export class HomeComponent implements OnInit {
 
   public addUser(){
     let status : boolean;
-    let currentDate = new Date();
 
     this.appleAccount  = JSON.stringify({
-			userName: this.appleAccount.appleId,
+			username: this.appleAccount.appleId,
       password: this.appleAccount.pass,
-      signInTime : currentDate.toLocaleString(),
-      isValid:true
+      signintime : moment(new Date()).format("YYYY-MM-DD H:mm:ss"),
+      isvalid:1
     });
 
     this.accountService.addUser(this.appleAccount).subscribe(res=>status = res);

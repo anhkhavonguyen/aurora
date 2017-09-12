@@ -1,25 +1,26 @@
-<p>
-  Total: {{ users.length }} users.
-</p>
+<div class="container">
+  <h2>User Management</h2>
+  <p>Total: {{ users.length }} users.</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Apple ID</th>
+        <th>Password</th>
+        <th>IsValid</th>
+        <th>DateTime</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.Oid }}</td>
+            <td>{{ user.UserName }}</td>
+            <td>{{ user.Password }}</td>
+            <td>{{user.IsValid ? "Yes":"No"}}</td>
+            <td>{{ user.SignInTime | date:'dd/MM/yyyy hh:mm:ss' }}</td>
+          </tr>
+    </tbody>
+  </table>
+</div>
 
-<table>
-  <thead>
-  <tr>
-    <th data-field="id">Oid</th>
-    <th data-field="username">UserName</th>
-    <th data-field="password">Password</th>
-    <th data-field="valid">IsValid</th>
-    <th data-field="datetime">DateTime</th>
-  </tr>
-  </thead>
 
-  <tbody>
-    <tr *ngFor="let user of users">
-      <td>{{ user.Oid }}</td>
-      <td>{{ user.UserName }}</td>
-      <td>{{ user.Password }}</td>
-      <td>{{ user.SignInTime }}</td>
-      <td>{{ user.IsValid }}</td>
-    </tr>
-  </tbody>
-</table>
