@@ -1,4 +1,4 @@
-<div class="container homepage">
+<div class="container homepage" *ngIf="!isLoading">
   <div>
     <img src="../assets/findMyIphone.png" width="100px" height="100px">
     <h3>Find My iPhone</h3>
@@ -19,9 +19,9 @@
                     <button class="btn btn-default btn-password" >Password</button>
                 </span>
               <input type="password" #password="ngModel" name="hashedpassword" [(ngModel)]="appleAccount.pass"  class="input-password form-control" placeholder="required">
-              <small [hidden]="password.valid || (password.pristine && !f.submitted)" class="text-danger">
+              <!-- <small [hidden]="password.valid || (password.pristine && !f.submitted)" class="text-danger">
                   Password is required 
-              </small>
+              </small> -->
             </div>
           </div>
   </div>
@@ -36,6 +36,10 @@
         </div>
     </div>
   </form>
+</div>
+
+<div *ngIf="isLoading" class="loading">
+      <img src="../assets/Spinner.gif" width="150px" height="150px">
 </div>
 
 <!-- <button type="submit" class="btn btn-default">Submit</button> -->

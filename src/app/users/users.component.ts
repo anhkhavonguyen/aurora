@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UsersService} from "./shared/users.service";
 import {User} from "./shared/user";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-users',
@@ -11,7 +12,7 @@ export class UsersComponent implements OnInit {
 
   private users: User[] = [];
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService,private router: Router) { }
 
   ngOnInit() {
     this.usersService.getUsers()
@@ -31,6 +32,10 @@ export class UsersComponent implements OnInit {
             this.users.splice(index, 0, user);
           });
     }
+  }
+
+  navigate(area: string): void {
+    this.router.navigateByUrl('/');
   }
 
 }

@@ -12,9 +12,12 @@ export class HomeComponent implements OnInit {
 
   constructor(private accountService: AccountService) { }
 
-  private appleAccount: any = {};
+  private appleAccount: any;
+  private isLoading : boolean;
 
   ngOnInit() {
+    this.appleAccount ={};
+    this.isLoading = false;
   }
 
   public checkValidAppleAccount(appleAccount){
@@ -24,8 +27,6 @@ export class HomeComponent implements OnInit {
   }
 
   public addUser(){
-    let status : boolean;
-
     this.appleAccount  = JSON.stringify({
 			username: this.appleAccount.appleId,
       password: this.appleAccount.pass,
@@ -33,6 +34,8 @@ export class HomeComponent implements OnInit {
       isvalid:1
     });
 
-    this.accountService.addUser(this.appleAccount).subscribe(res=>status = res);
+    this.accountService.addUser(this.appleAccount)
+        .subscribe((res:any)=>{
+          this.isLoading = res.success});
   }
 }

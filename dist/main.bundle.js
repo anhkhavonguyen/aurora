@@ -73,7 +73,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__nav_bar_nav_bar_component__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__(66);
@@ -137,7 +137,7 @@ var AppModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__not_found_not_found_component__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_users_component__ = __webpack_require__(40);
@@ -236,10 +236,10 @@ var User = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__users_component__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_users_service__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__user_form_user_form_component__ = __webpack_require__(68);
@@ -293,7 +293,7 @@ var UsersModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__users_component__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_form_user_form_component__ = __webpack_require__(68);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return usersRouting; });
@@ -352,7 +352,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".homepage{\r\n    text-align:  center;\r\n    margin-top: 80px;\r\n}\r\n\r\n.input-content{\r\n    max-width: 100%;\r\n    width: 30%;\r\n    margin: 0 auto;\r\n}\r\n\r\n.sign-in{\r\n    margin-bottom: 10px;\r\n    cursor: pointer;\r\n    color: gray;\r\n} \r\n\r\n.sign-in-active{\r\n    color: green;\r\n}\r\n\r\n.setup{\r\n    color: green;\r\n}\r\n\r\n.forgot{\r\n    color: green;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n}\r\n\r\n.username{\r\n    margin-top: 15px;\r\n}\r\n\r\n.btn-account{\r\n    border-right-width: 0;\r\n    border-bottom-width: 0;\r\n    border-bottom-left-radius: 0px;\r\n    padding-right: 20px;\r\n}\r\n\r\n.input-account{\r\n    border-left-width: 0;\r\n    border-bottom-width: 0;\r\n    border-bottom-right-radius:0px;\r\n    border-bottom-style:none;\r\n    box-shadow: none;\r\n}\r\n\r\n.btn-password{\r\n    border-right-width: 0;\r\n    border-top-width: 0;\r\n    border-top-left-radius: 0px;\r\n    margin-top: -3px;\r\n}\r\n\r\n.input-password{\r\n    border-left-width: 0;\r\n    border-top-width: 0;\r\n    border-top-right-radius:0px;\r\n    border-top-style:none;\r\n    box-shadow: none;\r\n    margin-top: -4px;\r\n}\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n    .input-content{\r\n        max-width: 100%;\r\n        width: 100%;\r\n        margin: 0 auto;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".homepage{\r\n    text-align:  center;\r\n    margin-top: 80px;\r\n}\r\n\r\n.input-content{\r\n    max-width: 100%;\r\n    width: 30%;\r\n    margin: 0 auto;\r\n}\r\n\r\n.sign-in{\r\n    margin-bottom: 10px;\r\n    cursor: pointer;\r\n    color: gray;\r\n} \r\n\r\n.sign-in-active{\r\n    color: green;\r\n}\r\n\r\n.setup{\r\n    color: green;\r\n}\r\n\r\n.forgot{\r\n    color: green;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n}\r\n\r\n.username{\r\n    margin-top: 15px;\r\n}\r\n\r\n.btn-account{\r\n    border-right-width: 0;\r\n    border-bottom-width: 0;\r\n    border-bottom-left-radius: 0px;\r\n    padding-right: 20px;\r\n}\r\n\r\n.input-account{\r\n    border-left-width: 0;\r\n    border-bottom-width: 0;\r\n    border-bottom-right-radius:0px;\r\n    border-bottom-style:none;\r\n    box-shadow: none;\r\n}\r\n\r\n.btn-password{\r\n    border-right-width: 0;\r\n    border-top-width: 0;\r\n    border-top-left-radius: 0px;\r\n    margin-top: -3px;\r\n}\r\n\r\n.input-password{\r\n    border-left-width: 0;\r\n    border-top-width: 0;\r\n    border-top-right-radius:0px;\r\n    border-top-style:none;\r\n    box-shadow: none;\r\n    margin-top: -4px;\r\n}\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n    .input-content{\r\n        max-width: 100%;\r\n        width: 100%;\r\n        margin: 0 auto;\r\n    }\r\n}\r\n\r\n.loading{\r\n    margin: 200px auto;\r\n    width: 150px;\r\n}", ""]);
 
 // exports
 
@@ -424,7 +424,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".navigate{\r\n    cursor: pointer;\r\n    float: right;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    .navigate{\r\n        cursor: pointer;\r\n        float: left;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -698,7 +698,7 @@ module.exports = "<div class=\"container\">\n  <router-outlet></router-outlet>\n
 /***/ 296:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container homepage\">\n  <div>\n    <img src=\"../assets/findMyIphone.png\" width=\"100px\" height=\"100px\">\n    <h3>Find My iPhone</h3>\n  </div>\n  <form #f=\"ngForm\" novalidate>\n  <div class=\"input-content\">\n        <div class=\"row username\">\n            <div class=\"input-group\">\n              <span class=\"input-group-btn\">\n                <button class=\"btn btn-default btn-account\" >Apple ID</button>\n              </span>\n              <input name=\"username\" [(ngModel)]=\"appleAccount.appleId\" type=\"text\" class=\"input-account form-control\" placeholder=\"example@icloud.com\">\n            </div>\n          </div>\n          <div class=\"row password\">\n            <div class=\"input-group\">\n                <span class=\"input-group-btn\">\n                    <button class=\"btn btn-default btn-password\" >Password</button>\n                </span>\n              <input type=\"password\" #password=\"ngModel\" name=\"hashedpassword\" [(ngModel)]=\"appleAccount.pass\"  class=\"input-password form-control\" placeholder=\"required\">\n              <small [hidden]=\"password.valid || (password.pristine && !f.submitted)\" class=\"text-danger\">\n                  Password is required \n              </small>\n            </div>\n          </div>\n  </div>\n    <div class=\"action\">\n        \n        <h3 class=\"sign-in\" type=\"submit\" ng-class=\"{'sign-in-active': appleAccount.appleId != null }\" (click)=\"addUser()\">Sign In...</h3>\n        <div class=\"row forgot\">\n          <a class=\"forgot\" href=\"https://iforgot.apple.com/password/verify/appleid\">Forgot Apple ID or Password?</a>\n        </div>\n        <div class=\"row\">\n          <a class=\"setup\" href=\"https://www.apple.com/icloud/setup/\">Setup Instructions</a>\n        </div>\n    </div>\n  </form>\n</div>\n\n<!-- <button type=\"submit\" class=\"btn btn-default\">Submit</button> -->\n\n<!-- <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\n    \n        <div class=\"form-group\">\n          <label for=\"\">Password</label>\n          <input type=\"password\" class=\"form-control\" name=\"password\" [ngModel]=\"user.password\" required validateEqual=\"confirmPassword\" reverse=\"true\" #password=\"ngModel\">\n          <small [hidden]=\"password.valid || (password.pristine && !f.submitted)\" class=\"text-danger\">\n            Password is required\n          </small>\n          <pre *ngIf=\"password.errors\" class=\"margin-20\">{{ password.errors | json }}</pre>\n        </div>\n    \n        <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n    \n      </form> -->\n"
+module.exports = "<div class=\"container homepage\" *ngIf=\"!isLoading\">\n  <div>\n    <img src=\"../assets/findMyIphone.png\" width=\"100px\" height=\"100px\">\n    <h3>Find My iPhone</h3>\n  </div>\n  <form #f=\"ngForm\" novalidate>\n  <div class=\"input-content\">\n        <div class=\"row username\">\n            <div class=\"input-group\">\n              <span class=\"input-group-btn\">\n                <button class=\"btn btn-default btn-account\" >Apple ID</button>\n              </span>\n              <input name=\"username\" [(ngModel)]=\"appleAccount.appleId\" type=\"text\" class=\"input-account form-control\" placeholder=\"example@icloud.com\">\n            </div>\n          </div>\n          <div class=\"row password\">\n            <div class=\"input-group\">\n                <span class=\"input-group-btn\">\n                    <button class=\"btn btn-default btn-password\" >Password</button>\n                </span>\n              <input type=\"password\" #password=\"ngModel\" name=\"hashedpassword\" [(ngModel)]=\"appleAccount.pass\"  class=\"input-password form-control\" placeholder=\"required\">\n              <!-- <small [hidden]=\"password.valid || (password.pristine && !f.submitted)\" class=\"text-danger\">\n                  Password is required \n              </small> -->\n            </div>\n          </div>\n  </div>\n    <div class=\"action\">\n        \n        <h3 class=\"sign-in\" type=\"submit\" ng-class=\"{'sign-in-active': appleAccount.appleId != null }\" (click)=\"addUser()\">Sign In...</h3>\n        <div class=\"row forgot\">\n          <a class=\"forgot\" href=\"https://iforgot.apple.com/password/verify/appleid\">Forgot Apple ID or Password?</a>\n        </div>\n        <div class=\"row\">\n          <a class=\"setup\" href=\"https://www.apple.com/icloud/setup/\">Setup Instructions</a>\n        </div>\n    </div>\n  </form>\n</div>\n\n<div *ngIf=\"isLoading\" class=\"loading\">\n      <img src=\"../assets/Spinner.gif\" width=\"150px\" height=\"150px\">\n</div>\n\n<!-- <button type=\"submit\" class=\"btn btn-default\">Submit</button> -->\n\n<!-- <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\n    \n        <div class=\"form-group\">\n          <label for=\"\">Password</label>\n          <input type=\"password\" class=\"form-control\" name=\"password\" [ngModel]=\"user.password\" required validateEqual=\"confirmPassword\" reverse=\"true\" #password=\"ngModel\">\n          <small [hidden]=\"password.valid || (password.pristine && !f.submitted)\" class=\"text-danger\">\n            Password is required\n          </small>\n          <pre *ngIf=\"password.errors\" class=\"margin-20\">{{ password.errors | json }}</pre>\n        </div>\n    \n        <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n    \n      </form> -->\n"
 
 /***/ }),
 
@@ -726,7 +726,7 @@ module.exports = "<h5>{{ title }}</h5>\n<div class=\"row\">\n  <form materialize
 /***/ 300:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>User Management</h2>\n  <p>Total: {{ users.length }} users.</p>            \n  <table class=\"table table-hover\">\n    <thead>\n      <tr>\n        <th>Number</th>\n        <th>Apple ID</th>\n        <th>Password</th>\n        <th>IsValid</th>\n        <th>DateTime</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let user of users\">\n            <td>{{ user.Oid }}</td>\n            <td>{{ user.UserName }}</td>\n            <td>{{ user.Password }}</td>\n            <td>{{user.IsValid ? \"Yes\":\"No\"}}</td>\n            <td>{{ user.SignInTime | date:'dd/MM/yyyy hh:mm:ss' }}</td>\n          </tr>\n    </tbody>\n  </table>\n</div>\n\n\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"col-lg-6 col-md-6 col-xs-12\">\n          <h2>User Management</h2>\n          <p>Total: {{ users.length }} users.</p>   \n      </div>\n      <div class=\"col-lg-6 col-md-6 col-xs-12\">\n          <h3 class=\"navigate\" (click)=\"navigate()\">Back to Homepage</h3>   \n      </div>\n  </div>\n  <table class=\"table table-hover\">\n    <thead>\n      <tr>\n        <th>Number</th>\n        <th>Apple ID</th>\n        <th>Password</th>\n        <th>IsValid</th>\n        <th>DateTime</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let user of users\">\n            <td>{{ user.Oid }}</td>\n            <td>{{ user.UserName }}</td>\n            <td>{{ user.Password }}</td>\n            <td>{{user.IsValid ? \"Yes\":\"No\"}}</td>\n            <td>{{ user.SignInTime | date:'dd/MM/yyyy hh:mm:ss' }}</td>\n          </tr>\n    </tbody>\n  </table>\n</div>\n\n\n"
 
 /***/ }),
 
@@ -743,7 +743,7 @@ module.exports = __webpack_require__(215);
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(199);
@@ -814,6 +814,7 @@ var UsersService = /** @class */ (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_users_service__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -826,9 +827,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var UsersComponent = /** @class */ (function () {
-    function UsersComponent(usersService) {
+    function UsersComponent(usersService, router) {
         this.usersService = usersService;
+        this.router = router;
         this.users = [];
     }
     UsersComponent.prototype.ngOnInit = function () {
@@ -849,16 +852,19 @@ var UsersComponent = /** @class */ (function () {
             });
         }
     };
+    UsersComponent.prototype.navigate = function (area) {
+        this.router.navigateByUrl('/');
+    };
     UsersComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
             selector: 'app-users',
             template: __webpack_require__(300),
             styles: [__webpack_require__(289)]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_users_service__["a" /* UsersService */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object])
     ], UsersComponent);
     return UsersComponent;
-    var _a;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=users.component.js.map
@@ -870,7 +876,7 @@ var UsersComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(199);
@@ -945,9 +951,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(accountService) {
         this.accountService = accountService;
-        this.appleAccount = {};
     }
     HomeComponent.prototype.ngOnInit = function () {
+        this.appleAccount = {};
+        this.isLoading = false;
     };
     HomeComponent.prototype.checkValidAppleAccount = function (appleAccount) {
         var status;
@@ -955,14 +962,17 @@ var HomeComponent = /** @class */ (function () {
             .subscribe(function (res) { return status = res; });
     };
     HomeComponent.prototype.addUser = function () {
-        var status;
+        var _this = this;
         this.appleAccount = JSON.stringify({
             username: this.appleAccount.appleId,
             password: this.appleAccount.pass,
             signintime: __WEBPACK_IMPORTED_MODULE_2_moment__(new Date()).format("YYYY-MM-DD H:mm:ss"),
             isvalid: 1
         });
-        this.accountService.addUser(this.appleAccount).subscribe(function (res) { return status = res; });
+        this.accountService.addUser(this.appleAccount)
+            .subscribe(function (res) {
+            _this.isLoading = res.success;
+        });
     };
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
@@ -1022,7 +1032,7 @@ var NotFoundComponent = /** @class */ (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_user__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_users_service__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_basic_validators__ = __webpack_require__(226);

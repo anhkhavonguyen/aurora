@@ -1,0 +1,11 @@
+.navigate{
+    cursor: pointer;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .navigate{
+        cursor: pointer;
+        float: left;
+    }
+}

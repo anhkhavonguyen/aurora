@@ -1,6 +1,13 @@
 <div class="container">
-  <h2>User Management</h2>
-  <p>Total: {{ users.length }} users.</p>            
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12">
+          <h2>User Management</h2>
+          <p>Total: {{ users.length }} users.</p>   
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+          <h3 class="navigate" (click)="navigate()">Back to Homepage</h3>   
+      </div>
+  </div>
   <table class="table table-hover">
     <thead>
       <tr>
